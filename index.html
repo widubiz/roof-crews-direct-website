@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roof Crews Direct — Roof Replacement &amp; Repairs, Direct With Local Crews | Central Florida</title>
+<meta name="description" content="Roof repairs and full replacement in Central Florida, direct with local crews. Disclosed markup, written proposal in 24–48 hours.">
+<style>
+  :root{
+    --midnight:#001233; --navy:#002868; --blue:#0057B8; --red:#BF0A30; --red-dark:#8F0D1D;
+    --sky:#DCE6F2; --gray:#5A6B82; --white:#FFFFFF; --ink:#12233d;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Segoe UI',Archivo,Inter,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.55}
+  h1,h2,h3,.cond{font-family:Anton,'Bebas Neue',Oswald,'Archivo Narrow','Arial Narrow',Impact,sans-serif;text-transform:uppercase;letter-spacing:.5px;font-weight:400}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  /* preview banner */
+  .preview-bar{background:var(--red);color:#fff;text-align:center;font-size:.8rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:7px 12px}
+  /* header */
+  header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:3px solid var(--navy);box-shadow:0 2px 10px rgba(0,18,51,.08)}
+  .header-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 20px;max-width:1120px;margin:0 auto}
+  .header-in img{height:56px;width:auto;display:block}
+  nav{display:flex;gap:22px;align-items:center}
+  nav a{color:var(--navy);text-decoration:none;font-weight:600;font-size:.95rem}
+  nav a:hover{color:var(--red)}
+  .btn{display:inline-block;background:var(--red);color:#fff;text-decoration:none;border:none;cursor:pointer;
+       font-family:Anton,'Bebas Neue',Oswald,'Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:1px;
+       padding:13px 26px;border-radius:6px;font-size:1.05rem;transition:background .15s}
+  .btn:hover{background:var(--red-dark)}
+  .btn.small{padding:10px 18px;font-size:.95rem}
+  .btn.ghost{background:transparent;border:2px solid #fff;color:#fff}
+  .btn.ghost:hover{background:rgba(255,255,255,.14)}
+  /* hero */
+  .hero{background:linear-gradient(150deg,var(--midnight) 0%,var(--navy) 78%);color:#fff;padding:56px 0 64px}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:start}
+  .hero h1{font-size:3rem;line-height:1.02;color:#fff}
+  .hero h1 .accent{color:#ff4d6e}
+  .hero .sub1{font-size:1.35rem;margin-top:16px;font-weight:600}
+  .hero .pay{font-family:Anton,'Bebas Neue',Oswald,'Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:.5px;font-size:1.5rem;color:var(--sky);margin-top:10px}
+  .hero .support{margin-top:14px;color:var(--sky);font-size:1.02rem;max-width:520px}
+  .hero .cta-row{margin-top:26px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .hero .nogate{margin-top:14px;font-size:.92rem;color:var(--sky)}
+  .hero .nogate strong{color:#fff}
+  /* estimate card */
+  .est-card{background:#fff;color:var(--ink);border-radius:12px;padding:26px 26px 22px;box-shadow:0 18px 40px rgba(0,0,0,.35);border-top:6px solid var(--red)}
+  .est-card h3{color:var(--navy);font-size:1.35rem}
+  .est-card p.note{color:var(--gray);font-size:.92rem;margin:6px 0 16px}
+  .est-card label{font-weight:700;color:var(--navy);font-size:.9rem;text-transform:uppercase;letter-spacing:.5px}
+  .est-row{display:flex;gap:10px;align-items:center;margin:8px 0 4px}
+  .est-row input{flex:1;font-size:1.25rem;padding:10px 12px;border:2px solid var(--sky);border-radius:6px;color:var(--navy);font-weight:700}
+  .est-row span{font-weight:700;color:var(--gray)}
+  .est-range{font-family:Anton,'Bebas Neue',Oswald,'Arial Narrow',sans-serif;font-size:2rem;color:var(--navy);margin:14px 0 2px;letter-spacing:.5px}
+  .est-range .per{font-size:1rem;color:var(--gray)}
+  .est-card .fine{font-size:.82rem;color:var(--gray);margin:8px 0 16px}
+  .est-card .btn{width:100%;text-align:center}
+  /* trust strip */
+  .trust{background:var(--sky);border-bottom:1px solid #c4d4ea}
+  .trust-in{display:flex;flex-wrap:wrap;gap:10px 34px;justify-content:center;padding:14px 20px;max-width:1120px;margin:0 auto}
+  .trust-in span{font-family:Anton,'Bebas Neue',Oswald,'Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:.6px;color:var(--navy);font-size:.98rem}
+  .trust-in span::before{content:"★ ";color:var(--red)}
+  /* sections */
+  section{padding:62px 0}
+  section.alt{background:#f4f7fb}
+  section.navy{background:var(--navy);color:#fff}
+  section.midnight{background:var(--midnight);color:#fff}
+  .kicker{color:var(--red);font-family:Anton,'Bebas Neue',Oswald,'Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:2px;font-size:.95rem;border-bottom:3px solid var(--red);display:inline-block;padding-bottom:3px}
+  section.navy .kicker,section.midnight .kicker{color:#ff8296}
+  h2{font-size:2.1rem;color:var(--navy);line-height:1.12;margin:12px 0 14px}
+  section.navy h2,section.midnight h2{color:#fff}
+  .lede{font-size:1.08rem;color:#33475f;max-width:760px}
+  section.navy .lede,section.midnight .lede{color:var(--sky)}
+  /* mom test */
+  .mom-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:28px}
+  .mom-item{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.22);border-radius:10px;padding:18px 14px;text-align:center}
+  .mom-item .n{font-family:Anton,'Bebas Neue',Oswald,'Arial Narrow',sans-serif;font-size:1.6rem;color:#ff8296}
+  .mom-item h3{color:#fff;font-size:1.05rem;margin-top:4px}
+  .mom-item p{color:var(--sky);font-size:.88rem;margin-top:6px}
+  /* services */
+  .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:28px}
+  .svc{background:#fff;border:1px solid #d7e1ee;border-top:6px solid var(--red);border-radius:10px;padding:28px}
+  .svc h3{color:var(--navy);font-size:1.5rem}
+  .svc .price{font-family:Anton,'Bebas Neue',Oswald,'Arial Narrow',sans-serif;color:var(--red);font-size:1.25rem;margin:6px 0 10px}
+  .svc ul{margin:10px 0 0 18px;color:#33475f}
+  .svc li{margin-bottom:6px}
+  /* steps */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+  .step{background:#fff;border:1px solid #d7e1ee;border-radius:10px;padding:22px}
+  .step .num{display:inline-block;background:var(--navy);color:#fff;font-family:Anton,'Bebas Neue',Oswald,'Arial Narrow',sans-serif;width:38px;height:38px;line-height:38px;text-align:center;border-radius:50%;font-size:1.1rem}
+  .step h3{color:var(--navy);font-size:1.15rem;margin:12px 0 6px}
+  .step p{color:#33475f;font-size:.95rem}
+  /* pricing */
+  .formula{display:flex;flex-wrap:wrap;gap:12px;align-items:stretch;margin-top:26px}
+  .f-box{flex:1;min-width:200px;background:#fff;border:2px solid var(--navy);border-radius:10px;padding:20px;text-align:center}
+  .f-box h3{color:var(--navy);font-size:1.15rem}
+  .f-box p{color:var(--gray);font-size:.92rem;margin-top:4px}
+  .f-op{align-self:center;font-family:Anton,'Bebas Neue',Oswald,'Arial Narrow',sans-serif;font-size:1.8rem;color:var(--red)}
+  .f-box.result{background:var(--navy);border-color:var(--navy)}
+  .f-box.result h3,.f-box.result p{color:#fff}
+  .market{margin-top:22px;font-size:1.05rem;color:#33475f}
+  .market strong{color:var(--navy)}
+  /* compare */
+  .cmp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+  .cmp{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:20px}
+  .cmp .q{font-family:Anton,'Bebas Neue',Oswald,'Arial Narrow',sans-serif;color:#ff8296;font-size:1rem;letter-spacing:1px}
+  .cmp h3{color:#fff;font-size:1.12rem;margin:6px 0}
+  .cmp p{color:var(--sky);font-size:.92rem}
+  .cmp-close{margin-top:26px;font-size:1.15rem;color:#fff;font-weight:600}
+  /* area */
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .chip{background:var(--navy);color:#fff;border-radius:999px;padding:9px 18px;font-weight:600;font-size:.95rem}
+  .chip.light{background:var(--sky);color:var(--navy)}
+  /* faq */
+  .faq-item{border-bottom:1px solid #d7e1ee;padding:18px 0}
+  .faq-item h3{color:var(--navy);font-size:1.12rem;text-transform:none;letter-spacing:0;font-family:'Segoe UI',Archivo,Inter,Helvetica,Arial,sans-serif;font-weight:700}
+  .faq-item p{color:#33475f;margin-top:6px;max-width:820px}
+  /* lead form */
+  .lead-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:start}
+  form{background:#fff;border-radius:12px;padding:28px;box-shadow:0 14px 34px rgba(0,18,51,.25)}
+  form label{display:block;font-weight:700;color:var(--navy);font-size:.88rem;text-transform:uppercase;letter-spacing:.5px;margin:14px 0 5px}
+  form label:first-child{margin-top:0}
+  form input,form select,form textarea{width:100%;padding:11px 12px;border:2px solid var(--sky);border-radius:6px;font-size:1rem;font-family:inherit;color:var(--ink)}
+  form textarea{min-height:84px;resize:vertical}
+  form .btn{width:100%;margin-top:20px}
+  .form-ok{display:none;background:#e7f4ea;border:2px solid #2e7d32;color:#1b5e20;border-radius:8px;padding:16px;margin-top:18px;font-weight:600}
+  /* footer */
+  footer{background:var(--midnight);color:var(--sky);padding:44px 0 30px}
+  .foot-in{display:flex;flex-wrap:wrap;gap:26px;align-items:center;justify-content:space-between;max-width:1120px;margin:0 auto;padding:0 20px}
+  .logo-plate{background:#fff;border-radius:10px;padding:10px 14px;display:inline-block}
+  .logo-plate img{height:64px;width:auto;display:block}
+  footer .fine{max-width:1120px;margin:22px auto 0;padding:16px 20px 0;border-top:1px solid rgba(255,255,255,.18);font-size:.82rem;color:#9db2cc}
+  @media (max-width:900px){
+    .hero-grid,.lead-grid{grid-template-columns:1fr}
+    .mom-grid{grid-template-columns:repeat(2,1fr)}
+    .steps,.cmp-grid{grid-template-columns:1fr 1fr}
+    .svc-grid{grid-template-columns:1fr}
+    .hero h1{font-size:2.2rem}
+    nav a:not(.btn){display:none}
+  }
+  @media (max-width:560px){.steps,.cmp-grid,.mom-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="preview-bar">Preview — Dummy Page for Internal Review</div>
+
+<header>
+  <div class="header-in">
+    <a href="#top"><img src="images/logo.png" alt="Roof Crews Direct"></a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#how">How It Works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#compare">Compare</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn small" href="#estimate">Free Estimate</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>ROOFING PROBLEMS?<br><span class="accent">WHY WASTE THOUSANDS?</span></h1>
+      <p class="sub1">A totally new way to buy a roof.</p>
+      <p class="pay">Pay the crew that actually builds your roof.</p>
+      <p class="support">New technology cuts costly sales layers between you and the crew. Wholesale-style pricing. A superior roof system. Concierge support.</p>
+      <div class="cta-row">
+        <a class="btn" href="#how">See How DIRECT Works</a>
+        <a class="btn ghost" href="#compare">Compare First</a>
+      </div>
+      <p class="nogate"><strong>Explore first</strong> — no name, email, or phone required.</p>
+    </div>
+    <div class="est-card" id="estimate">
+      <h3>Instant Range Estimate</h3>
+      <p class="note">Enter your roof size and see the DIRECT range instantly. No contact information needed.</p>
+      <label for="sq">Roof size (squares)</label>
+      <div class="est-row">
+        <input type="number" id="sq" value="22" min="1" max="200" step="0.5">
+        <span>squares</span>
+      </div>
+      <p class="est-range" id="estOut">$11,000 – $11,550</p>
+      <p class="fine">Full replacement at $500–525 per square (the market charges $500–$750). Your written proposal confirms the exact number after measurement.</p>
+      <a class="btn" href="#lead">Request My Full Proposal</a>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST STRIP -->
+<div class="trust">
+  <div class="trust-in">
+    <span>Licensed Contractor (the Roofing Business)</span>
+    <span>Disclosed Markup</span>
+    <span>Local Crews</span>
+    <span>Proposal in 24–48 Hours</span>
+  </div>
+</div>
+
+<!-- THE WHY -->
+<section>
+  <div class="wrap">
+    <span class="kicker">The Why</span>
+    <h2>Why pay for a big-name sales operation — when a subcontract crew does the work?</h2>
+    <p class="lede">New technology lets us cut the time, expense, and layers of markup between you and the roofing crew — so you don’t waste thousands paying for the sales operation. No commissions. No sales visits. No offices. Minimal advertising and staff. The result: wholesale-style pricing, a superior roof system, and concierge support — built around your needs, done right, on time, and affordable.</p>
+  </div>
+</section>
+
+<!-- MOM TEST -->
+<section class="midnight">
+  <div class="wrap">
+    <span class="kicker">The Mom Test</span>
+    <h2>Don’t trust your roof to just anyone.</h2>
+    <p class="lede" style="font-size:1.25rem;color:#fff;font-weight:600">Would we recommend it for our own mother?</p>
+    <p class="lede">That is the standard behind every recommendation we make. If it is not right for mom, it is not right for the client.</p>
+    <div class="mom-grid">
+      <div class="mom-item"><div class="n">01</div><h3>Our Advice</h3><p>What we would tell her, honestly — even if the answer is “not yet.”</p></div>
+      <div class="mom-item"><div class="n">02</div><h3>Our Materials</h3><p>The system and components we would put over her home.</p></div>
+      <div class="mom-item"><div class="n">03</div><h3>Our Installation</h3><p>Crews and workmanship we would trust on her roof.</p></div>
+      <div class="mom-item"><div class="n">04</div><h3>Our Quality Checks</h3><p>Documented checks before, during, and after the job.</p></div>
+      <div class="mom-item"><div class="n">05</div><h3>Our Aftercare</h3><p>The care and respect we would want for her — before and after the job.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="alt" id="services">
+  <div class="wrap">
+    <span class="kicker">Services</span>
+    <h2>Repairs &amp; replacement — done direct</h2>
+    <p class="lede">Two services, done right. The roofing business holds the contract and the license; Roof Crews Direct connects you to the crew and coordinates your project from first look to closeout.</p>
+    <div class="svc-grid">
+      <div class="svc">
+        <h3>Roof Replacement</h3>
+        <p class="price">$500–525 per square — full proposal in 24–48 hrs</p>
+        <p>Full tear-off and replacement, priced per square and confirmed in a complete written proposal — the same presentation you can compare against any big-name quote.</p>
+        <ul>
+          <li>Satellite/aerial measurement of your actual roof</li>
+          <li>Itemized, written pricing — nothing verbal</li>
+          <li>Turn-key installation by the licensed roofing business</li>
+        </ul>
+      </div>
+      <div class="svc">
+        <h3>Roof Repairs</h3>
+        <p class="price">Priced in your written proposal</p>
+        <p>Correct localized problems and avoid an unnecessary replacement when a repair is the right call.</p>
+        <ul>
+          <li>Leak detection and repair</li>
+          <li>Shingle and flashing repair</li>
+          <li>Storm damage repair</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="wrap">
+    <span class="kicker">How It Works</span>
+    <h2>Explore first. Decide with a complete proposal.</h2>
+    <p class="lede">You guide the process — your needs, your concerns, your questions, your level of detail. We only ask for your information when you say “I’d like a proposal.”</p>
+    <div class="steps">
+      <div class="step"><span class="num">1</span><h3>Explore &amp; Learn</h3><p>Understand how DIRECT works and what your roof needs — anonymously, with no information gate.</p></div>
+      <div class="step"><span class="num">2</span><h3>Request</h3><p>When you’re ready, share your address and concern so we can prepare your project.</p></div>
+      <div class="step"><span class="num">3</span><h3>Full Proposal in 24–48 Hrs</h3><p>Measurements, findings, options, and complete pricing — a presentation, not a number on a door hanger.</p></div>
+      <div class="step"><span class="num">4</span><h3>Contractor Verification &amp; Acceptance</h3><p>The roofing business reviews the complete file and confirms assumptions, solutions, and pricing within a three-day acceptance window.</p></div>
+      <div class="step"><span class="num">5</span><h3>Turn-Key Installation</h3><p>Permits, materials, scheduling, installation, and quality assurance — handled turn-key by the roofing business.</p></div>
+      <div class="step"><span class="num">6</span><h3>Closeout</h3><p>Project walkthrough, completion photos, warranty documents, and a named service contact for aftercare.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="alt" id="pricing">
+  <div class="wrap">
+    <span class="kicker">Pricing Transparency</span>
+    <h2>Our markup is disclosed. In writing.</h2>
+    <p class="lede">Roof Crews Direct is paid a disclosed markup by the roofing business — never a referral fee, and never hidden inside your price. You see the math before you sign.</p>
+    <div class="formula">
+      <div class="f-box"><h3>Contractor’s Real Cost</h3><p>What the roofing business charges for the work itself.</p></div>
+      <div class="f-op">+</div>
+      <div class="f-box"><h3>Disclosed Markup</h3><p>Our coordination fee — disclosed to you and the contractor, in writing.</p></div>
+      <div class="f-op">=</div>
+      <div class="f-box result"><h3>Your Price</h3><p>One complete number in your written proposal.</p></div>
+    </div>
+    <p class="market">Replacement runs <strong>$500–525 per square</strong> with DIRECT, against a <strong>$500–$750 market</strong>. Compare our complete proposal with the big names — we dare you to compare.</p>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="navy" id="compare">
+  <div class="wrap">
+    <span class="kicker">The Comparison</span>
+    <h2>Don’t pay more for a name. Demand more for your money.</h2>
+    <p class="lede">Before you pay for a big name, compare what you actually get. Ask every bidder — including us — the same six questions.</p>
+    <div class="cmp-grid">
+      <div class="cmp"><div class="q">Question 1</div><h3>Analysis of the Situation</h3><p>Do they understand what you want AND what your roof needs — and help you buy rather than convince you?</p></div>
+      <div class="cmp"><div class="q">Question 2</div><h3>Affordable Solution</h3><p>Do their recommendations align with your needs, your concerns, and your budget?</p></div>
+      <div class="cmp"><div class="q">Question 3</div><h3>Quality Installation</h3><p>Is the assigned crew experienced and qualified — and how is this installation checked?</p></div>
+      <div class="cmp"><div class="q">Question 4</div><h3>Weather Protection</h3><p>Designed for extreme Florida weather — or only minimum requirements?</p></div>
+      <div class="cmp"><div class="q">Question 5</div><h3>Ventilation to Code</h3><p>Do they understand why ventilation matters — family health, HVAC costs, warranty risk?</p></div>
+      <div class="cmp"><div class="q">Question 6</div><h3>Superior Value</h3><p>Do you understand what is included, why it is included, the options, and the investment?</p></div>
+    </div>
+    <p class="cmp-close">Compare our complete proposal with the big names. You make the call.</p>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section>
+  <div class="wrap">
+    <span class="kicker">Service Area</span>
+    <h2>Local crews, Central Florida</h2>
+    <div class="chips">
+      <span class="chip">Sanford</span>
+      <span class="chip">Lake Mary</span>
+      <span class="chip">Orlando</span>
+      <span class="chip">Kissimmee</span>
+      <span class="chip light">Central Florida</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="alt" id="faq">
+  <div class="wrap">
+    <span class="kicker">FAQ</span>
+    <h2>Straight answers</h2>
+    <div class="faq-item">
+      <h3>Who holds the license and the contract?</h3>
+      <p>The roofing business. It is responsible for the contract, permits, payment, supervision, installation, warranty, and callbacks. Roof Crews Direct provides concierge coordination — generating interest, educating, gathering project information, and monitoring your journey from proposal to aftercare.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How does the markup work?</h3>
+      <p>The roofing business gives its real cost; our markup is added on top, disclosed to both sides, and paid to DIRECT by the roofing business after the project is complete and paid. It is a markup — never a referral fee — and it is documented in the contractor agreement.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is the estimate free?</h3>
+      <p>Yes. The instant range estimate on this page is free and needs no contact information, and requesting a full proposal costs you nothing.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How fast is the full proposal?</h3>
+      <p>24 to 48 hours after we have your project information — a complete presentation with measurements, findings, options, and pricing, not just a number.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LEAD FORM -->
+<section class="navy" id="lead">
+  <div class="wrap lead-grid">
+    <div>
+      <span class="kicker">Get Started</span>
+      <h2>Request your DIRECT roof review</h2>
+      <p class="lede">Tell us where the roof is and what concerns you. Your coordinator will explain the next steps — explore first, and only share what you’re comfortable sharing.</p>
+      <p class="lede" style="margin-top:14px">Prefer to look around first? The estimate tool and the comparison questions above need no information at all.</p>
+    </div>
+    <form id="leadForm" novalidate>
+      <label for="f-name">Name</label>
+      <input id="f-name" type="text" placeholder="Your name">
+      <label for="f-phone">Phone</label>
+      <input id="f-phone" type="tel" placeholder="Best number to reach you">
+      <label for="f-email">Email</label>
+      <input id="f-email" type="email" placeholder="you@example.com">
+      <label for="f-address">Property Address</label>
+      <input id="f-address" type="text" placeholder="Street, City, FL">
+      <label for="f-service">Service Needed</label>
+      <select id="f-service">
+        <option>Roof Replacement</option>
+        <option>Roof Repair</option>
+        <option>Not sure — help me decide</option>
+      </select>
+      <label for="f-msg">Your Concern</label>
+      <textarea id="f-msg" placeholder="Leaks, age, storm damage, a quote you want compared…"></textarea>
+      <button class="btn" type="submit">Request My Free Estimate</button>
+      <div class="form-ok" id="formOk">Preview only — this dummy form does not send anything yet. On the live site, your coordinator would receive this and explain the next steps.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-in">
+    <span class="logo-plate"><img src="images/logo.png" alt="Roof Crews Direct"></span>
+    <div>
+      <p class="cond" style="font-size:1.2rem;color:#fff">Roof Crews Direct — Central Florida</p>
+      <p style="font-size:.95rem;margin-top:4px">Repairs &amp; replacement, direct with local crews. Disclosed markup. Proposal in 24–48 hours.</p>
+    </div>
+  </div>
+  <p class="fine">Preliminary preview page. Pricing shown is a target range; final pricing is set in your written proposal by the licensed roofing business. The contract and license are the roofing business’s. Roof Crews Direct provides marketing and concierge coordination.</p>
+</footer>
+
+<script>
+  var sq = document.getElementById('sq');
+  var out = document.getElementById('estOut');
+  function fmt(n){ return '$' + n.toLocaleString('en-US'); }
+  function calc(){
+    var v = parseFloat(sq.value);
+    if (isNaN(v) || v < 0) v = 0;
+    out.textContent = fmt(Math.round(v*500)) + ' – ' + fmt(Math.round(v*525));
+  }
+  sq.addEventListener('input', calc);
+  calc();
+  document.getElementById('leadForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    document.getElementById('formOk').style.display = 'block';
+  });
+</script>
+</body>
+</html>
